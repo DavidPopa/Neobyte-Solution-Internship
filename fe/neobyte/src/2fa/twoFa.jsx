@@ -5,7 +5,9 @@ import axios from "axios";
 
 export default function TwoFa() {
   const [code, setCode] = useState("");
+  const [error, setError] = useState(false);
   const navigate = useNavigate();
+  console.log("works");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,18 +17,21 @@ export default function TwoFa() {
       const response = await axios.post(
         "http://localhost:4000/api/verify-code",
         {
-          // email: "davidpopa843@gmail.com",
           code,
         }
       );
-
       if (response.data.error) {
         console.log("Verification error:", response.data.message);
         return;
       }
 
       console.log("Verification successful!");
-      navigate("/main");
+      if (response.data.isCode) {
+        navigate("/main");
+        setError(true);
+      } else {
+        setError(false);
+      }
     } catch (error) {
       console.log("API call error:", error);
     }
@@ -46,6 +51,7 @@ export default function TwoFa() {
             maxLength={6}
           />
         </label>
+        {error && <p>Error</p>}
         <button type="submit" className={classes.button}>
           Submit
         </button>

@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
   },
   createdAt: {
     type: Date,
-    expires: 600, // Code will expire after 10 minutes (600 seconds)
+    expires: 60000, // Code will expire after 10 minutes (600 seconds)
     default: Date.now,
   },
   code: String,

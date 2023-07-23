@@ -85,7 +85,6 @@ router.post("/logIn", async (req, res) => {
         .status(401)
         .json({ error: true, message: "Maybe ur email/password is wrong" });
 
-    // Set the generated code and createdAt timestamp before saving the user
     isUser.code = dataCode;
     isUser.createdAt = new Date();
     await isUser.save();
@@ -107,33 +106,35 @@ router.post("/logIn", async (req, res) => {
 });
 
 router.post("/verify-code", async (req, res) => {
-  const { code } = req.body;
-  const existedCode = await User.findOne({ code });
-  if (!existedCode) {
-    res.status(404).json({ error: true, message: "Message does no existed" });
-  }
-  if (code === existedCode.code) {
-    res.status(200).json({ message: "Code is good", isCode: true });
-    console.log("Works on my machine");
+  try {
+    const { code } = req.body;
+    const existedCode = await User.findOne({ code });
+
+    if (!existedCode) {
+      return res
+        .status(404)
+        .json({ error: true, message: "Code does not exist" });
+    }
+
+    if (code === existedCode.code) {
+      return res.status(200).json({ message: "Code is good", isCode: true });
+    } else {
+      return res
+        .status(400)
+        .json({ message: "Code is not good", isCode: false });
+    }
+  } catch (error) {
+    console.error("Error while verifying code:", error);
+    return res
+      .status(500)
+      .json({ error: true, message: "Internal server error" });
   }
 });
-// router.get("/allData", async (req, res) => {
-//   try {
-//     const database = client.db("test");
-//     const collection = database.collection("customers");
 
-//     const users = await collection.find({}).toArray();
-
-//     res.status(200).json(users);
-//   } catch (err) {
-//     console.error("Error fetching customers:", err);
-//     res.status(500).json({ error: true, message: "Internal Server Error" });
-//   }
-// });
 function sendEmailWithCode(email, code) {
   const mailOptions = {
     from: email,
-    to: "davidpopa843@gmail.com",
+    to: email,
     subject: "2FA Code",
     text: `Your verification code is: ${code}, it will be available only 10 mnutes`,
   };
