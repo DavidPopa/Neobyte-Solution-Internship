@@ -7,7 +7,7 @@ let indexCreationInProgress = false;
 
 const createIndexes = async () => {
   try {
-    // Create a compound index including all the fields used in the queries
+
     await mongoose.connection.db.collection("customers").createIndex({
       "First Name": 1,
       "Last Name": 1,
@@ -45,7 +45,7 @@ router.get("/data", async (req, res) => {
       Website: 1,
     };
 
-    // Limit resultatele
+    // Limitare resultatele
     const limit = 10;
 
     // Sort crescator

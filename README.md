@@ -4,23 +4,23 @@
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
 
-Install the required packages by running the following commands in your Python project directory: 
+Install the required packages by running the following commands in your Python project directory:
 
-- `pip install pandas` 
+- `pip install pandas`
 - `pip install pymongo`
 
 After you have all of these installed, you can run the code
 
-## Reat
+## React
 
 First you must have an IDE [VS Code](https://code.visualstudio.com/)
 
 Install the required packages by running the following commands in your project directory:
 
-- `npm i react-router-dom` 
-- `npm install @mui/material @emotion/react @emotion/styled` 
-- `npm i axios` 
-- `npm i react-icons` 
+- `npm i react-router-dom`
+- `npm install @mui/material @emotion/react @emotion/styled`
+- `npm i axios`
+- `npm i react-icons`
 - `npm install`
 
 After you have all of these you just type in terminal `npm run dev` and it will give to you an local url, press it and will see the app !
@@ -41,7 +41,7 @@ Install the required packages by running the following commands in your project 
 - `npm i emailjs`
 - `npm i express`
 - `npm i mongoose`
-- `npm i nodemailer` 
+- `npm i nodemailer`
 - `npm i speakeasy`
 - `npm i dotenv`
 
