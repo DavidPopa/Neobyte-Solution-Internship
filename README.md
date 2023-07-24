@@ -4,7 +4,7 @@
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
 
-Install the required packages by running the following commands in your Python project directory:
+Install the required packages by running the following commands in your Python3 project directory:
 
 - `pip install pandas`
 - `pip install pymongo`
