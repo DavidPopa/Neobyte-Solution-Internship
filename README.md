@@ -17,22 +17,22 @@ After you have all of these you just type in terminal `npm run dev` and it will 
 First you must have installed [nodejs](https://nodejs.org/en)
 After, you must install :
 
-  -`npm install` 
-  -`npm npm i nodemon` 
-  -`npm i @emailjs/browser` 
-  -`npm i bcrypt` 
-  -`npm i body-parser` 
-  -`npm i cookie-parser` 
-  -`npm i cors` 
-  -`npm i emailjs` 
-  -`npm i express` 
-  -`npm i mongoose` 
-  -.`npm i nodemailer` 
+  - `npm install` 
+  - `npm npm i nodemon` 
+  - `npm i @emailjs/browser` 
+  - `npm i bcrypt` 
+  - `npm i body-parser` 
+  - `npm i cookie-parser` 
+  - `npm i cors` 
+  - `npm i emailjs` 
+  - `npm i express` 
+  - `npm i mongoose` 
+  - `npm i nodemailer` 
   -`npm i speakeasy` 
-  -`npm i dotenv`
+  - `npm i dotenv`
 
 After these, you must create a .env file nad have these structure :
--`USER_NAME=`
--`PASSWORD=`
--`TOKEN_SERVER_PORT= `
+- `USER_NAME=`
+- `PASSWORD=`
+- `TOKEN_SERVER_PORT= `
 and complete with user_name, password and port for connectiv to my mongodb server
