@@ -21,5 +21,3 @@ if __name__ == "__main__":
     filepath = r'D:\customers\customers_customers-1000.csv' 
     import_CSV(filepath)
 # de luat din cnsola path-ul
-# de modifcat numelela file DANKE:))
-# de gasit cele mai eficiente metode de request-uri  
