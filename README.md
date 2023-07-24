@@ -3,26 +3,30 @@
 ## Python
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
-To run this script you must have installed : 
+Install the required packages by running the following commands in your Python project directory: 
+
 - `pip install pandas` 
 - `pip install pymongo`
-After you have all of these installed,, you can run the code
+
+After you have all of these installed, you can run the code
 
 ## Reat
 
 First you must have an IDE [VS Code](https://code.visualstudio.com/)
-After, you must install : 
+Install the required packages by running the following commands in your project directory:
+
 - `npm i react-router-dom` 
 - `npm install @mui/material @emotion/react @emotion/styled` 
 - `npm i axios` 
 - `npm i react-icons` 
 - `npm install`
+
 After you have all of these you just type in terminal `npm run dev` and it will give to you an local url, press it and will see the app !
 
 ## NodeJS
 
 First you must have installed [nodejs](https://nodejs.org/en)
-After, you must install :
+Install the required packages by running the following commands in your project directory:
 
 - `npm install`
 - `npm npm i nodemon`
@@ -37,9 +41,10 @@ After, you must install :
 - `npm i nodemailer` -`npm i speakeasy`
 - `npm i dotenv`
 
-After these, you must create a .env file nad have these structure :
+Create a .env file in your project directory and add the following content:
 
-- `USER_NAME=`
-- `PASSWORD=`
-- `TOKEN_SERVER_PORT= `
-  and complete with user_name, password and port for connectiv to my mongodb server
+- `USER_NAME=your_username`
+- `PASSWORD=your_password`
+- `TOKEN_SERVER_PORT=your_port_number`
+
+Replace your_username, your_password, and your_port_number with your actual MongoDB server credentials and desired port.
