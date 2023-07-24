@@ -3,13 +3,20 @@
 ## Python
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
-To run this script you must have installed : - `pip install pandas` - `pip install pymongo`
+To run this script you must have installed : 
+- `pip install pandas` 
+- `pip install pymongo`
 After you have all of these installed,, you can run the code
 
 ## Reat
 
 First you must have an IDE [VS Code](https://code.visualstudio.com/)
-After, you must install : - `npm i react-router-dom` - `npm install @mui/material @emotion/react @emotion/styled` - `npm i axios` - `npm i react-icons` - `npm install`
+After, you must install : 
+- `npm i react-router-dom` 
+- `npm install @mui/material @emotion/react @emotion/styled` 
+- `npm i axios` 
+- `npm i react-icons` 
+- `npm install`
 After you have all of these you just type in terminal `npm run dev` and it will give to you an local url, press it and will see the app !
 
 ## NodeJS
