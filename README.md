@@ -3,6 +3,7 @@
 ## Python
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
+
 Install the required packages by running the following commands in your Python project directory: 
 
 - `pip install pandas` 
@@ -13,6 +14,7 @@ After you have all of these installed, you can run the code
 ## Reat
 
 First you must have an IDE [VS Code](https://code.visualstudio.com/)
+
 Install the required packages by running the following commands in your project directory:
 
 - `npm i react-router-dom` 
@@ -26,6 +28,7 @@ After you have all of these you just type in terminal `npm run dev` and it will 
 ## NodeJS
 
 First you must have installed [nodejs](https://nodejs.org/en)
+
 Install the required packages by running the following commands in your project directory:
 
 - `npm install`
