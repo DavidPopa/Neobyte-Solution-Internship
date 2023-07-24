@@ -41,7 +41,8 @@ Install the required packages by running the following commands in your project 
 - `npm i emailjs`
 - `npm i express`
 - `npm i mongoose`
-- `npm i nodemailer` -`npm i speakeasy`
+- `npm i nodemailer` 
+- `npm i speakeasy`
 - `npm i dotenv`
 
 Create a .env file in your project directory and add the following content:
