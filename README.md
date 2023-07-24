@@ -51,4 +51,4 @@ Create a .env file in your project directory and add the following content:
 - `PASSWORD=your_password`
 - `TOKEN_SERVER_PORT=your_port_number`
 
-Replace your_username, your_password, and your_port_number with your actual MongoDB server credentials and desired port.
+Replace your_username, your_password, and your_port_number with your actual MongoDB server credentials and desired port and run `nodemon run`.
