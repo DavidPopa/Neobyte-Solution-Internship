@@ -1,6 +1,6 @@
 # Neobyte-Solution-Internship
 
-## Python
+## Python3
 
 First you need to have an interpretor for python [environments](https://code.visualstudio.com/docs/python/environments)
 
