@@ -11,7 +11,7 @@ Install the required packages by running the following commands in your Python p
 
 After you have all of these installed, you can run the code
 
-## React
+## ReactJs
 
 First you must have an IDE [VS Code](https://code.visualstudio.com/)
 
