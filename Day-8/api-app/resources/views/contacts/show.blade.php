@@ -13,7 +13,7 @@
         <p class="card-text">Type : {{ $contacts->type }}</p>
   </div>
        
-    </hr>
+    {{-- </hr> --}}
   
   </div>
 </div>
