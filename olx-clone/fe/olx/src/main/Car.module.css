@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.car {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.model {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.an,
+.km {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008080;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.editButton {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+}

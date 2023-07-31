@@ -1,0 +1,93 @@
+/* Main.module.css */
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.nav {
+  border: 1px solid black;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.model,
+.an,
+.km,
+.pret {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+select,
+input[type="number"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cars {
+  margin-top: 2rem;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #008080;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #006666;
+}
