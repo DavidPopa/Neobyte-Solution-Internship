@@ -24,7 +24,7 @@ export default function Main() {
     e.preventDefault();
     try {
       const response = await axios.get("http://localhost:5000/api/getCars", {
-        params: filters, 
+        params: filters,
       });
       setAllCars(response.data.cars);
     } catch (error) {
@@ -101,7 +101,7 @@ export default function Main() {
           </form>
         </div>
         <div className={clasess.cars}>
-          <Car allCars={allCars} />
+          <Car allCars={allCars} id={id} />
         </div>
       </div>
     </Fragment>

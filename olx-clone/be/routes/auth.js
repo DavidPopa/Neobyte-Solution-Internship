@@ -85,7 +85,7 @@ const upload = multer({ storage: storage });
 router.post("/addCar", upload.single("image"), async (req, res) => {
   console.log("req", req.body);
   const { userId, model, year, km, price } = req.body;
-  const imageFileName = req.file.filename; // Get the filename of the uploaded image
+  const imageFileName = req.file.filename;
 
   try {
     const user = await User.findById(userId);
@@ -162,6 +162,40 @@ router.get("/getCars", async (req, res) => {
   } catch (err) {
     console.error("Error fetching cars:", err);
     res.status(500).json({ error: true, message: "Error fetching cars" });
+  }
+});
+router.delete("/deleteCar", async (req, res) => {
+  const { userId, carId } = req.body;
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Find the index of the car with the given carId in the cars array
+    const carIndex = user.cars.findIndex((car) => car._id.toString() === carId);
+
+    if (carIndex === -1) {
+      return res.status(404).json({ message: "Car not found" });
+    }
+
+    // Remove the car from the cars array
+    user.cars.splice(carIndex, 1);
+
+    // Save the user document to persist the changes
+    await user.save();
+
+    res.status(200).json({
+      message: "Car successfully deleted",
+    });
+  } catch (err) {
+    console.error("Error deleting car:", err);
+    res.status(500).json({
+      error: true,
+      message: "Error deleting car",
+    });
   }
 });
 
